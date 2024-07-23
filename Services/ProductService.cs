@@ -12,7 +12,7 @@ namespace ProductAPI.Services
         {
             _products = new List<Product>();
             _deletedIds = new HashSet<int>();
-            _nextId = 1; // Start IDs from 1
+            _nextId = 1;
         }
 
         public void AddProduct(Product product)
@@ -38,20 +38,19 @@ namespace ProductAPI.Services
             if (product == null) return false;
 
             _products.Remove(product);
-            _deletedIds.Add(id); // Add ID to the deleted IDs
+            _deletedIds.Add(id);
             return true;
         }
 
         private bool ValidateProduct(Product product)
         {
-            // Check if LastName and Description are not empty and Quantity is within the valid range
             if (string.IsNullOrWhiteSpace(product.LastName) ||
                 string.IsNullOrWhiteSpace(product.Description) ||
                 product.Quantity < 1 ||
                 product.Quantity > 20 ||
-                product.FirstName.Length > 20 ||  // Check FirstName length
-                product.LastName.Length > 20 ||   // Check LastName length
-                product.Description.Length > 100) // Check Description length
+                product.FirstName.Length > 20 ||
+                product.LastName.Length > 20 ||
+                product.Description.Length > 100)
             {
                 return false;
             }

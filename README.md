@@ -72,6 +72,19 @@ ProductAPI/
    dotnet build
    ```
 
+## Adding Unit Test Project
+
+1. Before Running the Unit test project make sure to inclue the Main Project which is `ProductAPI` is referred properly.
+
+2. After cloning the repo if you found an already existing reference which is showing an error, Then remove that and follow the below steps.
+
+    2.1 Right click on the `Dependencies` from Unit test project and then from the drop down, click on `Add Project Reference`.
+
+    2.2. In the `Reference Manager` window, Under the `Projects` section, click on the `ProductAPI` dll reference.
+
+3. This should resolve the project reference issue.
+
+
 ## Running the Application
 
 1. Run the application:
@@ -200,6 +213,8 @@ In this API project we are using "Swagger UI" which provides interactive API doc
        "quantity": 5
      }
      ```
+   - Make sure to not add or change anything under `id`
+
 5. Click "Send"
 6. You should receive a `200 OK` response if the product was added successfully
 
