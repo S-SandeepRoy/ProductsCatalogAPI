@@ -5,21 +5,20 @@
 2. [Project Structure](#project-structure)
 3. [Prerequisites](#prerequisites)
 4. [Setup and Installation](#setup-and-installation)
-5. [Adding Unit Test Project](#adding-unit-test-project)
-6. [Running the Application](#running-the-application)
-7. [API Endpoints](#api-endpoints)
-8. [Data Model](#data-model)
-9. [Service Layer](#service-layer)
-10. [Controller](#controller)
-11. [Testing](#testing)
-12. [Dependency Injection](#dependency-injection)
-13. [Error Handling](#error-handling)
-14. [Swagger Documentation](#swagger-documentation)
-15. [Development Workflow](#development-workflow)
-16. [Testing API Endpoints with Postman](#testing-api-endpoints-with-postman)
-17. [Contributing](#contributing)
-18. [Troubleshooting](#troubleshooting)
-19. [License](#license)
+5. [Running the Application](#running-the-application)
+6. [API Endpoints](#api-endpoints)
+7. [Data Model](#data-model)
+8. [Service Layer](#service-layer)
+9. [Controller](#controller)
+10. [Testing](#testing)
+11. [Dependency Injection](#dependency-injection)
+12. [Error Handling](#error-handling)
+13. [Swagger Documentation](#swagger-documentation)
+14. [Development Workflow](#development-workflow)
+15. [Testing API Endpoints with Postman](#testing-api-endpoints-with-postman)
+16. [Contributing](#contributing)
+17. [Troubleshooting](#troubleshooting)
+18. [License](#license)
 
 ## Introduction
 
@@ -72,22 +71,7 @@ ProductAPI/
    ```
    dotnet build
    ```
-
-## Adding Unit Test Project
-
-1. Before running the unit test project make sure to include the main project which is `ProductAPI` referred properly.
-
-2. If you found an existing reference which is showing an error, Then remove that and follow the below steps.
-
-    2.1. Clone the Unit test API project with this link `https://github.com/S-SandeepRoy/ProductsAPI.Tests` and include this in main project.
-
-    2.2. Once added right click on the `Dependencies` from Unit test project and then from the drop down, click on `Add Project Reference`.
-
-    2.3. In the `Reference Manager` window, Under the `Projects` section, click on the `ProductAPI` dll reference.
-
-3. This should resolve the project reference issue.
-
-
+   
 ## Running the Application
 
 1. Run the application:
